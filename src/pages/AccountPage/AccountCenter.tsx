@@ -1,0 +1,30 @@
+import { ProCard } from "@ant-design/pro-components";
+import React from "react";
+import { Avatar, Row, Col, Typography } from "antd";
+
+const url =
+  "https://gw.alipayobjects.com/zos/antfincdn/XAosXuNZyF/BiazfanxmamNRoxxVxka.png";
+
+const AccountCenter: React.FC = () => {
+  return (
+    <ProCard wrap gutter={[0, 50]} layout="center" style={{ height: "100%" }}>
+      <Row
+        style={{ flexDirection: "column", alignItems: "center" }}
+        gutter={[0, 20]}
+      >
+        <Col>
+          <Avatar
+            size={{ xs: 24, sm: 32, md: 40, lg: 64, xl: 80, xxl: 100 }}
+            src={<img src={url} alt="avatar" />}
+          />
+        </Col>
+        <Col>
+          <Typography.Title level={3}>AdminSphere</Typography.Title>
+        </Col>
+        <Col>All rivers run into the sea; greatness lies in inclusiveness</Col>
+      </Row>
+    </ProCard>
+  );
+};
+
+export default AccountCenter;
